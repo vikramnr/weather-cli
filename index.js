@@ -1,3 +1,4 @@
+require('dotenv').config()
 const minimist = require('minimist')
 
 module.exports = () => {
@@ -20,7 +21,7 @@ module.exports = () => {
             require('./cmds/today')(args)
             break
         case 'forecast':
-            require('./cmds/forecase')(args)
+            require('./cmds/forecast')(args)
             break
         case 'version':
             require('./cmds/version')(args)
