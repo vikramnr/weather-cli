@@ -1,5 +1,6 @@
 require('dotenv').config()
 const minimist = require('minimist')
+const error = require('./utils/error')
 
 module.exports = () => {
     console.log('welcome to outside')
